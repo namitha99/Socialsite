@@ -10,17 +10,17 @@ To develop a social connection module using PHP and MySQL.
 
 The Database consists of the following tables:
 
-•login :
+login :
 	To store the details of the user. 
 	The attributes are profile_id which is auto generated, username, password and email of the user.
-•Request:
+Request:
 	To store the friend requests that are sent among the users. 
 	The attributes are profile_id and sent_to which are the ids of the two users whose request is pending. 
-	Upon the accept of the request by the user the particular row id deleted and the details of the two users are inserted into the friends table.
-•Friend:
+	Upon the accept of the request by the user the particular row id deleted and the details of the two users are inserted into the 		friends table.
+Friend:
 	To store the details of the users who are friends of each other. 
 	The attributes are profile_id1 and profile_id2.
-•Updatestatus :
+Updatestatus :
 	To store the real time updates/posts of the user. 
 	The attributes are profile_id, msg, username and time.
 
