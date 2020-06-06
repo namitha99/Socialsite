@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>LOGIN PAGE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="style_start.css"/>
+ 
+<style>
+.mySlides {display:none;}
+
+#story{
+float:left;
+position:absolute;
+//margin-left:30px;
+margin-top:485px;
+//background-color:#cc6476;
+width:100%;
+}
+
+::placeholder {
+  color: black;
+  //font-weight:bold;
+  font-size:18px;
+ 
+
+}
+ .form{
+	
+	position:relative;
+	z-index:1;
+	//background: RGBA(7,40,195,0.8);
+	background-color:#cc6476;
+	max-width:360px;
+	margin:0 auto 100px;
+	padding:45px;
+	text-align:center;
+	
+}
+.form input{
+		font-family:"Roboto",sans-serif;
+		
+		outline: 1;
+		background: #f2f2f2;
+		width:100%;
+		border:0;
+		margin:0 0 15px;
+		padding:15px;
+		box-sizing:border-box;
+		font-size:14px;
+		
+ }
+
+</style>
+
+</head>
+
+
+<body>
+<div align="left">
+<br>
+<br>
+<h2>
+Name: Namitha S
+<br>
+email:yes.namitha.99@gmail.com</h2>
+</div>
+	<div id="right_box">
+	
+		<div class="login-page">
+
+          		<div class="form">
+
+               		<form class="register-form"  method="post">
+                   		<input type="text" name="t1" placeholder="user name" title="username should consists of characters with max length 25" maxlength="25" pattern="[A-Za-z]*" required>
+				<input type="password" name="t2" id="passwordwithtitle" maxlength="25" placeholder="password" pattern="^(?=.*\d)(?=.*[A-Z])(?!.*\s).*$" title="Please include at least 1 uppercase character,and 1 number." required>
+				<input type="email" id="email" name="t3" placeholder="email id" maxlength="25" title="it can contain no,characters" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$" required>
+				
+				<input type="submit" value="create" formaction="create_new_user.php">
+				<b>
+			<P class="message">Already Registered?<a href="#">Login</a></p>
+				</b>
+                	</form>
+
+
+
+			<form class="login-form"  method="post">
+			<b>
+				<input type="text" name="t4" placeholder="user name" required>
+				<input type="password" name="t5"  placeholder="password" required>
+				<input type="submit" name="login" value="Login" formaction="validate_user_redirect.php">
+				
+				<p class="message">Not registered? <a href="#">Register</a></p>
+				</b>
+			</form>
+			<br>
+			
+          		</div>
+		</div>
+		
+		
+		<script src='ysrjs.js' ></script>
+
+		<script>
+			$('.message a').click(function(){
+				$('form').animate({height:"toggle",opacity:"toggle"},"fast");
+			});
+
+
+		</script>
+		
+		
+
+	</div>
+
+
+
+
+	
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>	
+	
+  <script src="try16.js"></script>
+  
+  
+  
+
+</body>
+
+
+
+</html>
