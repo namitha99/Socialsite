@@ -21,7 +21,7 @@ Friend:
 	To store the details of the users who are friends of each other. 
 	The attributes are profile_id1 and profile_id2.
 Updatestatus :
-	To store the real time updates/posts of the user. 
+	To store the real time updates/posts of the user.
 	The attributes are profile_id, msg, username and time.
 
 --------------------------------------------------------------------------------------------------------
